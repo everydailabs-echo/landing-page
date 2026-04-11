@@ -1,0 +1,414 @@
+/* ============================================
+   EverydAI Labs Landing Page Styles
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-dark: #0a0e27;
+    --primary-light: #1a1f3a;
+    --accent-blue: #0066ff;
+    --accent-green: #00d084;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --border-color: #2a2f4a;
+    --background: #0d111c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   Container & Layout
+   ============================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   Navigation
+   ============================================ */
+
+.navbar {
+    background-color: var(--primary-dark);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);
+    padding: 120px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: var(--accent-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid var(--accent-blue);
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--accent-blue);
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.3);
+}
+
+/* ============================================
+   About Section
+   ============================================ */
+
+.about {
+    padding: 80px 20px;
+    background-color: var(--background);
+}
+
+.about .container {
+    max-width: 800px;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* ============================================
+   Products Section
+   ============================================ */
+
+.products {
+    padding: 80px 20px;
+    background-color: var(--primary-dark);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.products h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: var(--primary-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    border-color: var(--accent-blue);
+    box-shadow: 0 10px 30px rgba(0, 102, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.product-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.product-header.chase {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 208, 132, 0.1));
+}
+
+.product-header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.product-tagline {
+    font-size: 14px;
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+.product-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.product-body p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.product-features {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.product-features li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.product-features li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-green);
+    font-weight: bold;
+}
+
+.product-link {
+    display: inline-block;
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+}
+
+.product-link:hover {
+    color: var(--accent-green);
+}
+
+.product-footer {
+    padding: 15px 20px;
+    background-color: rgba(0, 102, 255, 0.05);
+    border-top: 1px solid var(--border-color);
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.product-card.coming-soon {
+    opacity: 0.7;
+}
+
+/* ============================================
+   Contact Section
+   ============================================ */
+
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--background);
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--accent-blue);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-green);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.footer {
+    background-color: var(--primary-dark);
+    border-top: 1px solid var(--border-color);
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.footer p {
+    margin-bottom: 12px;
+}
+
+.footer-legal a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: var(--accent-green);
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer-note a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .about h2,
+    .products h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+}
