@@ -7,7 +7,14 @@
     "build": "echo 'Static site - no build step needed'",
     "serve": "python3 -m http.server 8000"
   },
-  "keywords": ["everydai", "landing", "ai"],
+  "keywords": [
+    "everydai",
+    "landing",
+    "ai"
+  ],
   "author": "EverydAI Labs",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.81.1"
+  }
 }
