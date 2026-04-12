@@ -1,0 +1,19 @@
+{
+  "generated": "2026-04-13T05:30:00Z",
+  "reports": [
+    {
+      "date": "2026-04-13",
+      "time": "05:30:00",
+      "type": "morning",
+      "title": "Morning Report — April 13, 2026",
+      "url": "2026-04-13.html"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "18:00:00",
+      "type": "daily",
+      "title": "Daily Report — April 12, 2026",
+      "url": "2026-04-12.html"
+    }
+  ]
+}
