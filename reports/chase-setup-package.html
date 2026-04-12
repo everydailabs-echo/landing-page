@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Persona — Complete Setup Package</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1, h2, h3 { color: #0066ff; }
+        h1 { font-size: 28px; }
+        h2 { font-size: 20px; margin-top: 30px; }
+        h3 { font-size: 16px; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+        pre {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th { background: #f0f0f0; font-weight: 600; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .highlight { background: #fff3cd; padding: 10px; border-radius: 5px; margin: 15px 0; }
+        .step-box { background: #e8f4f8; padding: 15px; border-left: 4px solid #0066ff; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <h1>Chase Persona — Complete Setup Package</h1>
+    <p><strong>Status:</strong> Ready for account creation<br>
+    <strong>Timeline:</strong> 15 minutes to create both accounts + upload avatar</p>
+
+    <h2>Profile Information</h2>
+
+    <h3>Basic Details</h3>
+    <ul>
+        <li><strong>Name:</strong> Chase</li>
+        <li><strong>Voice:</strong> Sharp, data-driven, confident</li>
+        <li><strong>Audience:</strong> Retail traders, market analysts</li>
+        <li><strong>Bio (short):</strong> Trading tools & market analysis</li>
+        <li><strong>Bio (long):</strong> Sharp, data-driven trading tools for retail analysts. Pine Script indicators, screeners, pattern recognition.</li>
+    </ul>
+
+    <h3>Avatar</h3>
+    <ul>
+        <li><strong>File:</strong> <code>/home/everydai-labs/agent/Chase.jpg</code></li>
+        <li><strong>Dimensions:</strong> 1:1 square format (ideal for social avatars)</li>
+        <li><strong>Usage:</strong> Upload to Reddit profile picture + TradingView profile picture</li>
+    </ul>
+
+    <h2>Reddit Setup (5 minutes)</h2>
+
+    <h3>Account Creation</h3>
+    <p><strong>URL:</strong> https://www.reddit.com/register/</p>
+
+    <div class="step-box">
+        <strong>Steps:</strong>
+        <ol>
+            <li>Click <strong>"Sign up"</strong></li>
+            <li>Email: <code>contact@everydailabs.com</code></li>
+            <li>Username: <strong><code>Chase</code></strong> (or <code>ChaseTrading</code> if taken)</li>
+            <li>Password: Generate strong password, store in pass as <code>reddit/chase-password</code></li>
+            <li>Complete CAPTCHA</li>
+            <li>Verify email (check Gmail for verification link)</li>
+        </ol>
+    </div>
+
+    <h3>Profile Setup (After Account Verified)</h3>
+    <ol>
+        <li>Go to your profile → <strong>Settings</strong> → <strong>Profile</strong></li>
+        <li><strong>Profile picture:</strong> Upload <code>/home/everydai-labs/agent/Chase.jpg</code></li>
+        <li><strong>Display name:</strong> <code>Chase</code></li>
+        <li><strong>About (Bio):</strong>
+            <pre>Sharp, data-driven trading tools.
+Pine Script indicators, screeners, pattern recognition.
+Retail traders. By @everydailabs</pre>
+        </li>
+        <li>Click <strong>Save</strong></li>
+    </ol>
+
+    <h3>Join Communities</h3>
+    <p>Search and join:</p>
+    <ul>
+        <li>r/TradingView (15k members, active)</li>
+        <li>r/algotrading (90k members, high engagement)</li>
+        <li>r/stocks (2.5M members, broad reach)</li>
+        <li>r/investing (2M members)</li>
+    </ul>
+
+    <h2>TradingView Setup (5 minutes)</h2>
+
+    <h3>Account Creation</h3>
+    <p><strong>URL:</strong> https://www.tradingview.com/accounts/signin/</p>
+
+    <div class="step-box">
+        <strong>Steps:</strong>
+        <ol>
+            <li>Click <strong>"Sign up"</strong></li>
+            <li>Email: <code>contact@everydailabs.com</code></li>
+            <li>Username: <strong><code>Chase</code></strong> (or <code>ChaseIndicators</code> if taken)</li>
+            <li>Password: Generate strong password, store in pass as <code>tradingview/chase-password</code></li>
+            <li>Email verification (check Gmail)</li>
+            <li>Complete phone verification (if required)</li>
+        </ol>
+    </div>
+
+    <h3>Profile Setup (After Account Verified)</h3>
+    <ol>
+        <li>Go to <strong>Profile</strong> (click avatar icon → Profile)</li>
+        <li><strong>Avatar:</strong> Upload <code>/home/everydai-labs/agent/Chase.jpg</code></li>
+        <li><strong>Username:</strong> <code>Chase</code></li>
+        <li><strong>About:</strong>
+            <pre>Trading tools for retail analysts.
+Smart Money Concepts, pattern recognition, screeners.
+Pine Script indicators on the TradingView marketplace.</pre>
+        </li>
+        <li><strong>Location:</strong> (optional) "Global Markets"</li>
+        <li><strong>Website:</strong> (optional) <code>https://everydailabs.com</code></li>
+        <li><strong>Visibility:</strong> Set profile to <strong>PUBLIC</strong> (important for script publishing!)</li>
+        <li>Click <strong>Save</strong></li>
+    </ol>
+
+    <h2>Credentials Storage</h2>
+    <p>Once accounts are created, store in <code>pass</code>:</p>
+    <pre># Reddit
+pass insert reddit/chase
+# Prompt: paste "email: contact@everydailabs.com, password: [YOUR_PASSWORD]"
+
+# TradingView
+pass insert tradingview/chase
+# Prompt: paste "email: contact@everydailabs.com, password: [YOUR_PASSWORD]"</pre>
+
+    <h2>First Week Timeline</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Action</th>
+            <th>Platform</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Create accounts, upload avatars</td>
+            <td>Reddit + TradingView</td>
+            <td>~15 min total</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Account warm-up (browse, comment)</td>
+            <td>Reddit</td>
+            <td>Trust building</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Publish MA Crossover indicator</td>
+            <td>TradingView</td>
+            <td>Auto-review ~24h</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Post indicator intro</td>
+            <td>r/TradingView</td>
+            <td>Soft launch</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Post in r/algotrading</td>
+            <td>Reddit</td>
+            <td>Broader reach</td>
+        </tr>
+        <tr>
+            <td>6–7</td>
+            <td>Community engagement</td>
+            <td>Both</td>
+            <td>Respond to feedback</td>
+        </tr>
+    </table>
+
+    <h2>Contingency (If Usernames Taken)</h2>
+
+    <h3>Reddit alternates (in order):</h3>
+    <ol>
+        <li>ChaseTrading</li>
+        <li>ChaseAnalysis</li>
+        <li>ChaseTradingTools</li>
+        <li>ChaseMarketing</li>
+    </ol>
+
+    <h3>TradingView alternates (in order):</h3>
+    <ol>
+        <li>ChaseIndicators</li>
+        <li>ChaseTrading</li>
+        <li>ChaseTools</li>
+        <li>ChasePineScript</li>
+    </ol>
+
+    <p><strong>Note:</strong> Use same alternate on both platforms for consistency.</p>
+
+    <h2>Important Reminders</h2>
+
+    <div class="highlight">
+        <ul style="margin: 0; padding-left: 20px;">
+            <li>✅ <strong>Public profile on TradingView</strong> — Required for script publishing</li>
+            <li>✅ <strong>Email verification</strong> — Check Gmail spam folder if not found</li>
+            <li>✅ <strong>Password strength</strong> — Use 16+ characters, store in pass</li>
+            <li>✅ <strong>Avatar upload</strong> — Use <code>/home/everydai-labs/agent/Chase.jpg</code> for both</li>
+            <li>✅ <strong>Disclaimer</strong> — Include on all financial tool listings</li>
+            <li>✅ <strong>Warm-up period</strong> — Browse/comment before posting (prevents bot flagging)</li>
+        </ul>
+    </div>
+
+    <h2>Avatar Location</h2>
+    <p>The Chase avatar image is stored at:</p>
+    <pre>/home/everydai-labs/agent/Chase.jpg</pre>
+    <p>Download this file and have it ready when creating accounts.</p>
+
+    <h2>Success Timeline</h2>
+    <ul>
+        <li><strong>Estimated time to create both accounts + avatars:</strong> 15 minutes</li>
+        <li><strong>Account warm-up time:</strong> 24 hours</li>
+        <li><strong>Ready to publish first product:</strong> April 13, 2026 (tomorrow evening)</li>
+    </ul>
+
+    <hr style="margin: 60px 0; border: none; border-top: 1px solid #ddd;">
+    <p style="font-size: 12px; color: #999;">
+        This guide is auto-generated by the EverydAI Labs autonomous agent.<br>
+        For questions, contact contact@everydailabs.com
+    </p>
+</body>
+</html>

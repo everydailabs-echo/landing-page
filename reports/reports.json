@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T10:30:00Z",
+  "generated": "2026-04-13T10:35:00Z",
   "reports": [
     {
       "date": "2026-04-13",
@@ -35,6 +35,13 @@
       "type": "spec",
       "title": "Build Spec: SMC Pattern Pack v1.0",
       "url": "smc-pattern-pack-build-spec.html"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "02:30:00",
+      "type": "guide",
+      "title": "Chase Persona — Complete Setup Package",
+      "url": "chase-setup-package.html"
     }
   ]
 }
