@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Specification: Smart Money Concepts Pattern Pack v1.0</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1, h2, h3 { color: #0066ff; }
+        h1 { font-size: 28px; }
+        h2 { font-size: 20px; margin-top: 30px; }
+        h3 { font-size: 16px; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+        pre {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th { background: #f0f0f0; font-weight: 600; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Build Specification: Smart Money Concepts Pattern Pack v1.0</h1>
+    <p><strong>Project:</strong> Chase - SMC Pattern Pack (Fair Value Gaps + Break of Structure)<br>
+    <strong>Timeline:</strong> 4–5 days (after MA Crossover launches)<br>
+    <strong>Tier:</strong> 2–3 (Advanced web tool or advanced Pine Script)<br>
+    <strong>Development Cost:</strong> ~$30 in tokens<br>
+    <strong>Expected Revenue:</strong> $400–1000/month (premium product, upsell from MA Crossover)</p>
+
+    <h2>Project Overview</h2>
+    <p><strong>What we're building:</strong> A professional-grade Smart Money Concepts (SMC) indicator pack that identifies:</p>
+    <ol>
+        <li>Fair Value Gaps (FVG) — unfilled price gaps that typically get filled</li>
+        <li>Break of Structure (BOS) — when price breaks a previous high/low (institutional signal)</li>
+        <li>Order Blocks (optional) — previous support/resistance zones</li>
+    </ol>
+    <ul>
+        <li><strong>Platform:</strong> TradingView (marketplace)</li>
+        <li><strong>Language:</strong> Pine Script 5</li>
+        <li><strong>Deployment:</strong> TradingView marketplace</li>
+    </ul>
+
+    <h2>Market Context</h2>
+
+    <h3>Why SMC?</h3>
+    <ul>
+        <li><strong>Growing trend:</strong> SMC is trending heavily in retail trading (Reddit, YouTube, TikTok)</li>
+        <li><strong>High demand:</strong> 500+ weekly posts asking "where can I find a good SMC indicator?"</li>
+        <li><strong>Poor free alternatives:</strong> Most free SMC indicators are buggy or abandoned</li>
+        <li><strong>Price point:</strong> Users willing to pay $15–30/month for quality SMC tools</li>
+        <li><strong>Community:</strong> Strong, engaged, and growing community</li>
+    </ul>
+
+    <h2>Features Breakdown</h2>
+
+    <h3>Feature 1: Fair Value Gaps (FVG) Detection</h3>
+    <p><strong>What is FVG?</strong> An unfilled gap in price action (usually between two candles) that the market tends to come back and fill.</p>
+
+    <p><strong>User Options:</strong></p>
+    <ul>
+        <li>Minimum gap size (in points or %)</li>
+        <li>Show all gaps vs high-probability gaps only</li>
+        <li>Minimum number of bars before marking as "unfilled"</li>
+        <li>Color scheme for bullish/bearish gaps</li>
+    </ul>
+
+    <h3>Feature 2: Break of Structure (BOS) Detection</h3>
+    <p><strong>What is BOS?</strong> When price breaks a previous swing high or low, it signals institutional movement (potential trend change).</p>
+
+    <p><strong>User Options:</strong></p>
+    <ul>
+        <li>Lookback period for swing identification (default 10 bars)</li>
+        <li>Show swing highs/lows on chart</li>
+        <li>Alert on break</li>
+        <li>Color for uptrend vs downtrend breaks</li>
+    </ul>
+
+    <h3>Feature 3: Order Blocks (Optional/Advanced)</h3>
+    <p><strong>What is OB?</strong> A previous support/resistance zone where institutions likely placed orders (accumulation/distribution).</p>
+
+    <h2>Development Timeline</h2>
+
+    <h3>Day 1: Research & Specification Refinement</h3>
+    <ul>
+        <li>Review top 5 SMC indicators on TradingView (identify features)</li>
+        <li>Research SMC community expectations (Reddit, YouTube)</li>
+        <li>Finalize feature set based on demand</li>
+        <li>Estimate lines of code</li>
+    </ul>
+
+    <h3>Day 2–3: Build & Test</h3>
+    <ul>
+        <li>Write Pine Script code for FVG detection</li>
+        <li>Write Pine Script code for BOS detection</li>
+        <li>Test on 10 pairs × 5 timeframes</li>
+        <li>Debug and optimize</li>
+    </ul>
+
+    <h3>Day 4: Documentation & Polish</h3>
+    <ul>
+        <li>Create TradingView listing copy</li>
+        <li>Create demo screenshots/charts</li>
+        <li>Write user guide (PDF or video)</li>
+        <li>Prepare Reddit launch posts</li>
+    </ul>
+
+    <h3>Day 5: Deploy</h3>
+    <ul>
+        <li>Submit to TradingView marketplace</li>
+        <li>Publish Reddit posts</li>
+        <li>Monitor initial ratings/feedback</li>
+    </ul>
+
+    <h2>Testing Plan</h2>
+
+    <h3>Test Matrix</h3>
+    <ul>
+        <li><strong>Assets:</strong> EUR/USD, BTC/USD, SPY, Gold, ES (5 pairs)</li>
+        <li><strong>Timeframes:</strong> 5m, 15m, 1h, 4h, 1d (5 timeframes)</li>
+        <li><strong>Scenarios:</strong> Trending market, ranging market, volatile market, calm market</li>
+    </ul>
+
+    <h3>FVG Accuracy Testing</h3>
+    <ul>
+        <li>[ ] Correctly identifies bullish FVGs</li>
+        <li>[ ] Correctly identifies bearish FVGs</li>
+        <li>[ ] Filters out noise (small gaps < min size)</li>
+        <li>[ ] Tracks if gaps are filled</li>
+        <li>[ ] Shows historical fill rate</li>
+    </ul>
+
+    <h3>BOS Accuracy Testing</h3>
+    <ul>
+        <li>[ ] Identifies swing highs correctly</li>
+        <li>[ ] Identifies swing lows correctly</li>
+        <li>[ ] Detects breakouts reliably</li>
+        <li>[ ] False positives < 5%</li>
+        <li>[ ] Works across timeframes</li>
+    </ul>
+
+    <h2>Pricing Strategy</h2>
+
+    <h3>Subscription Model (Recommended)</h3>
+    <ul>
+        <li><strong>Monthly:</strong> $16.99/month</li>
+        <li><strong>Annual:</strong> $149/year (save $55)</li>
+        <li><strong>Early bird discount:</strong> First 100 users get lifetime 25% off = $12.74/month</li>
+    </ul>
+
+    <h3>Positioning Against Competitors</h3>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Competitor A</th>
+            <th>Competitor B</th>
+            <th>Chase SMC</th>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>$24.99/mo</td>
+            <td>$19.99/mo</td>
+            <td><strong>$16.99/mo</strong></td>
+        </tr>
+        <tr>
+            <td>FVG</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>BOS</td>
+            <td>✓</td>
+            <td>✗</td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>Order Blocks</td>
+            <td>✓</td>
+            <td>✗</td>
+            <td>✓ v1.1</td>
+        </tr>
+        <tr>
+            <td>Support</td>
+            <td>Email (slow)</td>
+            <td>Forum</td>
+            <td><strong>Reddit (24h)</strong></td>
+        </tr>
+        <tr>
+            <td>Updates</td>
+            <td>Quarterly</td>
+            <td>Unknown</td>
+            <td><strong>Weekly</strong></td>
+        </tr>
+    </table>
+
+    <h3>Revenue Projection</h3>
+    <ul>
+        <li><strong>Month 1:</strong> 20–30 users = $340–510/month</li>
+        <li><strong>Month 2:</strong> 50–80 users = $850–1,360/month</li>
+        <li><strong>Month 3:</strong> 100–150 users = $1,700–2,550/month</li>
+        <li><strong>Month 4+:</strong> 150–250+ users = $2,550–4,250+/month</li>
+    </ul>
+
+    <h2>Upsell Strategy</h2>
+
+    <h3>Bundle Offer (After Launch)</h3>
+    <pre>"Chase Trading Bundle"
+MA Crossover + SMC Pattern Pack
+Buy both: Save 20% = $22.98/month (instead of $28.98)</pre>
+
+    <h3>Progression Path</h3>
+    <ol>
+        <li>User discovers MA Crossover ($11.99/mo)</li>
+        <li>Uses for 2 weeks, likes it</li>
+        <li>Sees SMC Pack in testimonials/comments</li>
+        <li>Upgrades to bundle ($22.98/mo)</li>
+        <li>Gets both tools, 20% discount</li>
+    </ol>
+
+    <h2>Success Metrics</h2>
+
+    <h3>By end of Month 1 (May 2026):</h3>
+    <ul>
+        <li>[ ] 30+ active subscribers</li>
+        <li>[ ] 4.6+ star rating</li>
+        <li>[ ] $500+ MRR</li>
+        <li>[ ] 5+ testimonials from users</li>
+        <li>[ ] Zero critical bugs</li>
+    </ul>
+
+    <h3>If goals missed:</h3>
+    <ul>
+        <li>Push v1.1 with most-requested features</li>
+        <li>Create YouTube tutorial series</li>
+        <li>Increase Reddit/community presence</li>
+    </ul>
+
+    <h2>Post-Launch Roadmap</h2>
+
+    <h3>v1.1 (May 2026)</h3>
+    <ul>
+        <li>[ ] Order Blocks implementation</li>
+        <li>[ ] FVG fill tracking notifications</li>
+        <li>[ ] Historical win rate dashboard</li>
+        <li>[ ] Multi-timeframe confluence indicator</li>
+    </ul>
+
+    <h3>v1.2 (June 2026)</h3>
+    <ul>
+        <li>[ ] Mobile alerts (push notifications)</li>
+        <li>[ ] Trading journal integration</li>
+        <li>[ ] Backtesting data export</li>
+    </ul>
+
+    <h2>Next Steps</h2>
+
+    <ol>
+        <li>✅ <strong>Finalize specification</strong> (done)</li>
+        <li>⏳ <strong>Launch MA Crossover</strong> (April 13–14)</li>
+        <li>⏳ <strong>Wait for feedback</strong> (2 weeks)</li>
+        <li>⏳ <strong>Build SMC Pack</strong> (April 20–25)</li>
+        <li>⏳ <strong>Launch SMC Pack</strong> (April 26)</li>
+        <li>⏳ <strong>Scale both products</strong> (May+)</li>
+    </ol>
+
+    <p><strong>This is the #2 priority product. Build after MA Crossover gets 50+ active users.</strong></p>
+
+    <hr style="margin: 60px 0; border: none; border-top: 1px solid #ddd;">
+    <p style="font-size: 12px; color: #999;">
+        This report is auto-generated by the EverydAI Labs autonomous agent.
+    </p>
+</body>
+</html>

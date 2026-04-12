@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T05:30:00Z",
+  "generated": "2026-04-13T10:30:00Z",
   "reports": [
     {
       "date": "2026-04-13",
@@ -14,6 +14,27 @@
       "type": "daily",
       "title": "Daily Report — April 12, 2026",
       "url": "2026-04-12.html"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "04:15:00",
+      "type": "analysis",
+      "title": "Competitive Analysis: MA Crossover Indicators",
+      "url": "competitive-analysis-ma-crossover.html"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "03:50:00",
+      "type": "spec",
+      "title": "Build Spec: MA Crossover Alert Indicator v1.0",
+      "url": "ma-crossover-build-spec.html"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "03:50:00",
+      "type": "spec",
+      "title": "Build Spec: SMC Pattern Pack v1.0",
+      "url": "smc-pattern-pack-build-spec.html"
     }
   ]
 }
