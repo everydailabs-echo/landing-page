@@ -326,7 +326,7 @@
 
         // Fetch reports data on page load
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('/reports/reports.json')
+            fetch('./reports.json')
                 .then(response => {
                     if (!response.ok) throw new Error('Failed to load reports');
                     return response.json();
