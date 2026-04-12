@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "EverydAI Labs Daily Reports"
-AuthUserFile /home/everydai-labs/agent/landing-page/reports/.htpasswd
-Require valid-user
