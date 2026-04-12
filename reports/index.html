@@ -332,7 +332,43 @@
                     return response.json();
                 })
                 .then(data => {
-                    reportsByDate = data;
+                    // data = { generated: "...", reports: [{date, type, title, url}, ...] }
+                    const flatReports = Array.isArray(data.reports) ? data.reports : [];
+
+                    // Group reports by date into the dict structure renderReports() expects.
+                    // Keys are ISO-style sortable strings ("2026-04-14") derived from each
+                    // report's date field so that Object.keys().sort().reverse() orders them
+                    // newest-first.  Values are { date: <human label>, reports: [{name, type, file}] }.
+                    const dateDict = {};
+
+                    flatReports.forEach(report => {
+                        // report.date is expected to be an ISO date string ("2026-04-14")
+                        // or any string we can use as a sortable key directly.
+                        const rawDate = report.date || '';
+
+                        // Build a human-readable label from the ISO date.
+                        let humanDate = rawDate;
+                        if (rawDate) {
+                            const parsed = new Date(rawDate + 'T00:00:00'); // avoid TZ shift
+                            if (!isNaN(parsed)) {
+                                humanDate = parsed.toLocaleDateString('en-US', {
+                                    year: 'numeric', month: 'long', day: 'numeric'
+                                });
+                            }
+                        }
+
+                        if (!dateDict[rawDate]) {
+                            dateDict[rawDate] = { date: humanDate, reports: [] };
+                        }
+
+                        dateDict[rawDate].reports.push({
+                            name: report.title || report.url || 'Untitled',
+                            type: report.type || 'report',
+                            file: report.url || ''
+                        });
+                    });
+
+                    reportsByDate = dateDict;
                     renderReports();
                 })
                 .catch(error => {
