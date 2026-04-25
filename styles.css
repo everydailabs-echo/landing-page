@@ -210,8 +210,16 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
-.product-header.chase {
-    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 208, 132, 0.1));
+.product-header.ajito {
+    background: linear-gradient(135deg, rgba(255, 153, 51, 0.12), rgba(204, 85, 51, 0.10));
+}
+
+.brand-jp {
+    font-size: 0.6em;
+    color: var(--accent-blue);
+    margin-left: 8px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
 }
 
 .product-header h3 {
@@ -362,6 +370,72 @@ body {
     text-decoration: none;
 }
 
+.footer-disclaimer {
+    margin-top: 16px;
+    font-size: 11px;
+    color: var(--text-secondary);
+    opacity: 0.75;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================
+   Disclaimer & Legal Sections
+   ============================================ */
+
+.disclaimer {
+    background-color: var(--primary-light);
+    border-top: 1px solid #2a1f00;
+    border-bottom: 1px solid #2a1f00;
+    padding: 60px 20px;
+}
+
+.disclaimer h2 {
+    font-size: 22px;
+    color: #ffb300;
+    margin-bottom: 20px;
+}
+
+.disclaimer p {
+    color: var(--text-secondary);
+    margin-bottom: 14px;
+    font-size: 14px;
+    max-width: 760px;
+}
+
+.disclaimer p strong {
+    color: var(--text-primary);
+}
+
+.legal-section {
+    background-color: var(--primary-dark);
+    border-top: 1px solid var(--border-color);
+    padding: 60px 20px;
+}
+
+.legal-section h2 {
+    font-size: 22px;
+    color: var(--accent-blue);
+    margin-bottom: 20px;
+}
+
+.legal-section p {
+    color: var(--text-secondary);
+    margin-bottom: 14px;
+    font-size: 14px;
+    max-width: 760px;
+}
+
+.legal-section p strong {
+    color: var(--text-primary);
+}
+
+.legal-section a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
 /* ============================================
    Responsive Design
    ============================================ */
@@ -377,7 +451,9 @@ body {
 
     .about h2,
     .products h2,
-    .contact h2 {
+    .contact h2,
+    .disclaimer h2,
+    .legal-section h2 {
         font-size: 28px;
     }
 

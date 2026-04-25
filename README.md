@@ -24,7 +24,7 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for step-by-step instructions.
 ✅ Responsive design (mobile, tablet, desktop)  
 ✅ Dark theme with blue/green accent colors  
 ✅ Hero section with CTA  
-✅ Product showcase (Chase persona featured)  
+✅ Product showcase (Ajito featured)  
 ✅ Contact section with email + social links  
 ✅ Professional footer with legal links  
 
