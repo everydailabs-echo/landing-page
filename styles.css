@@ -289,6 +289,21 @@ body {
     color: var(--text-secondary);
 }
 
+.product-disclaimer {
+    margin-top: 20px;
+    padding: 12px 14px;
+    background-color: rgba(255, 184, 0, 0.08);
+    border-left: 3px solid #f5a524;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.product-disclaimer strong {
+    color: var(--text-primary);
+}
+
 .product-card.coming-soon {
     opacity: 0.7;
 }
