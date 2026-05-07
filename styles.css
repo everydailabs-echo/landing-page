@@ -451,6 +451,24 @@ body {
     text-decoration: none;
 }
 
+.legal-section ul {
+    color: var(--text-secondary);
+    font-size: 14px;
+    max-width: 760px;
+    margin: 0 0 14px 0;
+    padding-left: 22px;
+}
+
+.legal-section ul li {
+    margin-bottom: 6px;
+}
+
+.legal-section ul li em {
+    color: var(--text-primary);
+    font-style: normal;
+    font-weight: 600;
+}
+
 /* ============================================
    Responsive Design
    ============================================ */

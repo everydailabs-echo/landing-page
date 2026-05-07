@@ -101,7 +101,8 @@
             <p>&copy; 2026 EverydAI Labs. All rights reserved.</p>
             <p class="footer-legal">
                 <a href="#privacy">Privacy Policy</a> |
-                <a href="#terms">Terms of Service</a>
+                <a href="#terms">Terms of Service</a> |
+                <a href="#refunds">Refund Policy</a>
             </p>
             <p class="footer-note">EverydAI Labs is an autonomous AI agent business. <a href="#">Learn more</a> about our approach.</p>
         </div>
@@ -110,22 +111,77 @@
     <section id="privacy" class="legal-section">
         <div class="container">
             <h2>Privacy Policy</h2>
-            <p><em>Last updated: April 2026</em></p>
-            <p><strong>What we collect:</strong> EverydAI Labs collects minimal data. Our website does not use tracking cookies or third-party analytics. Product-specific data handling is documented per product at launch.</p>
-            <p><strong>Contact data:</strong> If you email us, we retain your email address only for the purpose of responding to your inquiry.</p>
-            <p><strong>Third-party platforms:</strong> Products may be distributed or billed via third-party platforms. Those platforms have their own privacy policies governing data collected during purchase or use.</p>
-            <p><strong>Your rights:</strong> You may request deletion of any data we hold by contacting <a href="mailto:contact@everydailabs.com">contact@everydailabs.com</a>. We respond within 30 days.</p>
+            <p><em>Last updated: May 2026</em></p>
+
+            <p><strong>What we collect.</strong> EverydAI Labs operates products under separate brands. The website itself uses no tracking cookies, no third-party analytics, and no advertising pixels. Product-specific data handling is described below.</p>
+
+            <p><strong>Ajito (cooking assistant).</strong> When you create an Ajito account we collect:</p>
+            <ul>
+                <li>Your email address (for login and service notifications)</li>
+                <li>A locale preference and your chosen display name</li>
+                <li>Pantry contents, dietary preferences, and recipe history that you enter or upload</li>
+                <li>Photos of fridges, receipts, or dishes that you submit. Images are passed to our AI provider for analysis and are not retained on our servers after the response is processed; only the extracted text or pantry deltas are persisted.</li>
+                <li>Standard server logs (request timestamps, IP, error traces) retained up to 30 days for abuse prevention and debugging</li>
+            </ul>
+
+            <p><strong>Where data is stored.</strong> Ajito account data is stored on Supabase infrastructure in the Tokyo (ap-northeast-1) region. AI requests are processed by Anthropic (Claude API) under their zero-retention terms — Anthropic does not retain the content of your requests beyond the response.</p>
+
+            <p><strong>Payments.</strong> Subscription billing is processed by Lemon Squeezy as Merchant of Record. Lemon Squeezy collects payment instrument data, billing address, and tax information directly; we never receive or store full card numbers. Their privacy policy is available at <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">lemonsqueezy.com/privacy</a>.</p>
+
+            <p><strong>Your rights (GDPR / Japan APPI).</strong> You may at any time:</p>
+            <ul>
+                <li>Export your account data by emailing <a href="mailto:contact@everydailabs.com">contact@everydailabs.com</a></li>
+                <li>Delete your account and all associated data from within the Ajito app, or by emailing the same address (we respond within 30 days)</li>
+                <li>Object to processing or request correction of inaccurate data</li>
+            </ul>
+
+            <p><strong>Contact for privacy matters:</strong> <a href="mailto:contact@everydailabs.com">contact@everydailabs.com</a></p>
         </div>
     </section>
 
     <section id="terms" class="legal-section">
         <div class="container">
             <h2>Terms of Service</h2>
-            <p><em>Last updated: April 2026</em></p>
-            <p><strong>As-is provision:</strong> EverydAI Labs products are provided as-is, without warranties of any kind, express or implied.</p>
-            <p><strong>No guarantees:</strong> We make no warranties regarding the accuracy, completeness, or fitness for any particular purpose of our tools.</p>
-            <p><strong>Liability:</strong> EverydAI Labs is not liable for any losses arising from use of our products. Use at your own risk.</p>
-            <p><strong>License:</strong> Products are licensed for personal, non-commercial use unless explicitly stated otherwise per product. Redistribution or resale is prohibited.</p>
+            <p><em>Last updated: May 2026</em></p>
+
+            <p><strong>Service.</strong> EverydAI Labs provides AI-powered software products on a subscription or free basis. Products are provided "as is" and we make no warranty that they will meet your specific requirements or be uninterrupted or error-free.</p>
+
+            <p><strong>Subscriptions and renewal.</strong> Paid subscriptions auto-renew at the end of each billing period (monthly or yearly) unless cancelled. You can cancel at any time from the customer portal accessed within the product, and you will retain access until the end of the period you have already paid for. Current Ajito pricing: Solo ¥980/month or ¥9,800/year; Family ¥1,980/month or ¥19,800/year. Applicable taxes are calculated and collected by Lemon Squeezy at checkout.</p>
+
+            <p><strong>Service availability.</strong> We do not guarantee uninterrupted or error-free service and offer no SLA. Short interruptions, scheduled maintenance, and outages outside our control (cloud provider, AI provider, payment provider, network) do not entitle you to any credit or refund. In the event of a prolonged outage attributable solely to our own infrastructure, we <em>may</em>, at our sole discretion, issue a prorated credit toward a future billing period. Any such credit is goodwill, not an obligation.</p>
+
+            <p><strong>Service termination by us.</strong></p>
+            <ul>
+                <li><em>Paid subscribers:</em> if we discontinue a paid product, we will give at least 90 days' written notice (by email and on this site) and refund any unused prepaid period on a prorated basis.</li>
+                <li><em>Free or demo users:</em> we may discontinue free tiers or change limits with at least 30 days' notice.</li>
+                <li>We reserve the right to suspend or terminate any account immediately for violation of these terms (abuse, fraud, illegal use), without refund.</li>
+            </ul>
+
+            <p><strong>Acceptable use.</strong> You may not use our products to generate unlawful content, attempt to extract our system prompts or model weights, evade rate limits via multiple accounts, or resell access to the service.</p>
+
+            <p><strong>Liability.</strong> To the maximum extent permitted by law, EverydAI Labs' total liability for any claim is limited to the fees you paid in the 12 months preceding the claim. We are not liable for indirect, incidental, or consequential damages. AI-generated output (recipes, ingredient lists, dietary information) is informational and not a substitute for professional medical, nutritional, or legal advice.</p>
+
+            <p><strong>License.</strong> Products are licensed for personal, non-commercial use unless explicitly stated otherwise per product. Redistribution, resale, or use in automated downstream services is prohibited.</p>
+
+            <p><strong>Governing law.</strong> These terms are governed by the laws of Japan. Disputes are subject to the exclusive jurisdiction of the Tokyo District Court.</p>
+
+            <p><strong>Contact:</strong> <a href="mailto:contact@everydailabs.com">contact@everydailabs.com</a></p>
+        </div>
+    </section>
+
+    <section id="refunds" class="legal-section">
+        <div class="container">
+            <h2>Refund Policy</h2>
+            <p><em>Last updated: May 2026</em></p>
+
+            <p><strong>Cancel anytime.</strong> You can cancel an active subscription from the customer portal inside the product. Cancellation stops the next renewal — you retain full access until the end of the period you have already paid for. No partial refund is issued for the unused remainder of the current period.</p>
+
+            <p><strong>Mistaken or duplicate charges.</strong> If you were billed in error (duplicate charge, charge after a confirmed cancellation, or a charge you did not authorise), email <a href="mailto:contact@everydailabs.com">contact@everydailabs.com</a> within 30 days of the charge with the order ID. Eligible refunds are issued by Lemon Squeezy back to the original payment method.</p>
+
+            <p><strong>Service disruption.</strong> See "Service availability" in our Terms of Service. We do not refund or credit for short outages or for issues caused by third-party providers. Any goodwill credit for prolonged outages caused by our own infrastructure is at our sole discretion.</p>
+
+            <p><strong>Merchant of Record.</strong> All refunds are processed through Lemon Squeezy, who acts as the merchant of record for our subscriptions. Refund timing depends on your card issuer or PayPal — typically 5 to 10 business days after approval.</p>
+
             <p><strong>Contact:</strong> <a href="mailto:contact@everydailabs.com">contact@everydailabs.com</a></p>
         </div>
     </section>
