@@ -153,6 +153,11 @@
                 </details>
 
                 <details>
+                    <summary>Will my card issuer add any extra fees?</summary>
+                    <p>The price on this page is the full amount captured by Lemon Squeezy — we don't add any surcharge on top. However, Lemon Squeezy is registered as a U.S.-based Merchant of Record, so some Japanese-issued credit cards apply a small international-transaction fee (typically ~1–2%, varies by issuer) on any charge from a foreign merchant, even when the charge currency is JPY. This fee is set and collected entirely by your card issuer; it does not go to us or to Lemon Squeezy, and the exact amount depends on your card. To avoid it, check whether your card offers a "no-foreign-transaction-fee" option, or <a href="#contact">contact us</a> about alternative payment methods.</p>
+                </details>
+
+                <details>
                     <summary>How long does the founder rate last?</summary>
                     <p>The 25% discount applies for the first 12 months of your subscription. After 12 months, your subscription continues at the standard rate (Solo ¥980/mo, Family ¥1,980/mo). The standard rate may change in the future; in that case we'll notify all subscribers at least 30 days before any change takes effect. If you cancel and later return, the founder discount no longer applies.</p>
                 </details>
@@ -199,20 +204,34 @@
     <section id="privacy" class="legal-section">
         <div class="container">
             <h2>Privacy Policy</h2>
-            <p><em>Last updated: May 2026</em></p>
+            <p><em>Last updated: 22 May 2026</em></p>
 
             <p><strong>What we collect.</strong> EverydAI Labs operates products under separate brands. The website itself uses no marketing or behavior-tracking cookies, no third-party analytics, and no advertising pixels. Minimal technical cookies and data processing required for security and payment (via Cloudflare for edge protection and Lemon Squeezy for checkout sessions) do occur and are out of our direct control; their use is limited to the function each provider performs. Product-specific data handling is described below.</p>
 
             <p><strong>Ajito (cooking assistant).</strong> When you create an Ajito account we collect:</p>
             <ul>
-                <li>Your email address (for login and service notifications)</li>
-                <li>A locale preference and your chosen display name</li>
-                <li>Pantry contents, dietary preferences, and recipe history that you enter or upload</li>
-                <li>Photos of fridges, receipts, or dishes that you submit. Images are passed to our AI provider for analysis and are not retained on our servers after the response is processed; only the extracted text or pantry deltas are persisted.</li>
+                <li>Your email address — used to send one-time login codes (we do not store passwords) and account notifications</li>
+                <li>A locale preference</li>
+                <li>Profile data that you enter into the app:
+                    <ul>
+                        <li><em>Pantry &amp; inventory.</em> Pantry items and your expiry-tracking preference.</li>
+                        <li><em>Personalization.</em> Food preferences (including any allergies and dietary restrictions you choose to share — please note that allergy and religious / health-based dietary information is treated as sensitive personal information), cooking goals, and recipe browse / save history.</li>
+                        <li><em>Household.</em> Household composition (number of adults and children only — we do not collect names, birthdates, or other individually identifying information about household members).</li>
+                    </ul>
+                </li>
+                <li>Photos of fridges, receipts, or dishes that you submit. We handle this image data as follows:
+                    <ul>
+                        <li><em>External transfer.</em> Image data is sent to an external AI provider (currently Anthropic, Inc.) for analysis, for the purposes of service provision and functional improvement. We operate under zero-retention terms with this provider — neither the input data nor the response is retained on their side after the analysis completes.</li>
+                        <li><em>Our servers.</em> Submitted images are stored on our Supabase infrastructure in the Tokyo region for up to 30 days, after which an automated cleanup job permanently deletes them.</li>
+                        <li><em>Extracted data.</em> Text and pantry-delta information extracted from the image is stored persistently on your account, and is removed alongside all other account data when you delete your account.</li>
+                    </ul>
+                </li>
                 <li>Standard server logs (request timestamps, IP, error traces) retained up to 30 days for abuse prevention and debugging</li>
             </ul>
 
             <p><strong>Where data is stored.</strong> Ajito account data is stored on Supabase infrastructure in the Tokyo (ap-northeast-1) region. AI requests are processed by Anthropic (Claude API) under their zero-retention terms — Anthropic does not retain the content of your requests beyond the response.</p>
+
+            <p><strong>Data security.</strong> All personal data we process is transmitted over encrypted connections (TLS) and stored encrypted at rest by our infrastructure providers.</p>
 
             <p><strong>Sub-processors.</strong> We use the following service providers to deliver Ajito. Each operates under its own privacy policy; in handling your data on our behalf, they act as sub-processors under our terms.</p>
             <ul>
@@ -243,7 +262,7 @@
     <section id="terms" class="legal-section">
         <div class="container">
             <h2>Terms of Service</h2>
-            <p><em>Last updated: May 2026</em></p>
+            <p><em>Last updated: 22 May 2026</em></p>
 
             <p><strong>Service.</strong> EverydAI Labs provides AI-powered software products on a subscription or free basis. <span class="legal-caps">PRODUCTS ARE PROVIDED "AS IS" AND WE MAKE NO WARRANTY, EXPRESS OR IMPLIED, THAT THEY WILL MEET YOUR SPECIFIC REQUIREMENTS, BE UNINTERRUPTED, OR BE ERROR-FREE. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</span></p>
 
@@ -287,7 +306,7 @@
     <section id="refunds" class="legal-section">
         <div class="container">
             <h2>Refund Policy</h2>
-            <p><em>Last updated: May 2026</em></p>
+            <p><em>Last updated: 22 May 2026</em></p>
 
             <p><strong>Cancel anytime.</strong> You can cancel an active subscription from the customer portal inside the product. Cancellation stops the next renewal — you retain full access until the end of the period you have already paid for. No partial refund is issued for the unused remainder of the current period.</p>
 
