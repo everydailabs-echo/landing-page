@@ -1,0 +1,489 @@
+/* ============================================
+   Ajito product page — layered on top of /styles.css
+   ============================================ */
+
+.ajito-page {
+    /* Same base palette as corporate but slightly warmer accent for product feel */
+    --ajito-accent: #d97706;
+    --ajito-accent-soft: rgba(217, 119, 6, 0.12);
+    --ajito-surface: #14182b;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-cta {
+    background: var(--ajito-accent);
+    color: #0a0e27 !important;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.nav-cta:hover {
+    filter: brightness(1.1);
+}
+
+/* ============================================
+   Hero
+   ============================================ */
+
+.ajito-hero {
+    padding: 80px 0 60px 0;
+    text-align: center;
+    background: radial-gradient(ellipse at top, rgba(217, 119, 6, 0.08), transparent 60%);
+}
+.ajito-hero .hero-wordmark {
+    width: 280px;
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 24px;
+}
+.ajito-hero h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+.ajito-hero .hero-subtitle {
+    max-width: 640px;
+    margin: 0 auto 28px auto;
+    font-size: clamp(15px, 2vw, 18px);
+    color: var(--text-secondary);
+}
+.ajito-hero .hero-ctas {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+.ajito-hero .cta-primary {
+    background: var(--ajito-accent);
+    color: #0a0e27;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.ajito-hero .cta-primary:hover {
+    filter: brightness(1.1);
+}
+.ajito-hero .cta-secondary {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 15px;
+}
+.ajito-hero .cta-secondary:hover {
+    color: var(--text-primary);
+}
+.ajito-hero .hero-fineprint {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* ============================================
+   Section base
+   ============================================ */
+
+.how-it-works,
+.why-ajito,
+.founder-story,
+.testimonials,
+.faq-section,
+.final-cta {
+    padding: 60px 0;
+}
+
+.ajito-page h2 {
+    font-size: clamp(24px, 4vw, 32px);
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+.ajito-page .section-sub {
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+/* ============================================
+   How it works
+   ============================================ */
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+.step-card {
+    background: var(--ajito-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px;
+}
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--ajito-accent);
+    color: #0a0e27;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.step-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+.step-card p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+/* Phone-screenshot slot. Empty = visible aspect-ratio'd placeholder so the
+   layout shows the gap. Populated (has <img>) = polished phone mock with
+   rounded corners + subtle shadow, no border or placeholder caption. */
+.step-screenshot-slot {
+    width: 100%;
+    aspect-ratio: 9 / 19.5;
+    max-height: 420px;
+    background: rgba(217, 119, 6, 0.04);
+    border: 1px dashed rgba(217, 119, 6, 0.35);
+    border-radius: 14px;
+    margin: 0 auto;
+    max-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step-screenshot-slot::after {
+    content: "screenshot →";
+    color: rgba(217, 119, 6, 0.55);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+.step-screenshot-slot:has(img) {
+    background: transparent;
+    border: 0;
+    aspect-ratio: auto;
+    max-height: none;
+    padding: 0;
+    overflow: hidden;
+}
+.step-screenshot-slot:has(img)::after {
+    content: none;
+}
+.step-screenshot-slot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.04) inset,
+        0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+/* ============================================
+   Why Ajito
+   ============================================ */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+.feature {
+    background: var(--ajito-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 24px;
+}
+.feature h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+.feature p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ============================================
+   Founder story + Testimonials
+   ============================================ */
+
+.founder-story-card {
+    background: var(--ajito-surface);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--ajito-accent);
+    border-radius: 10px;
+    padding: 28px 32px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.founder-story-card p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+.founder-story-card p:last-child {
+    margin-bottom: 0;
+}
+.founder-story-card .founder-signature {
+    color: var(--ajito-accent);
+    font-weight: 600;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+.testimonial-card {
+    background: var(--ajito-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.testimonial-card blockquote {
+    margin: 0 0 14px 0;
+    color: var(--text-primary);
+    font-size: 15px;
+    line-height: 1.55;
+    font-style: italic;
+}
+.testimonial-card figcaption {
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ============================================
+   Pricing — mirrors the corporate style, lighter on visual weight
+   ============================================ */
+
+.pricing-section {
+    background: var(--primary-dark);
+}
+.pricing-section h2 {
+    margin-bottom: 8px;
+}
+.pricing-section .pricing-sub {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+}
+.founder-banner {
+    background: var(--ajito-accent-soft);
+    border: 1px solid var(--ajito-accent);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 0 auto 32px auto;
+    max-width: 720px;
+    text-align: center;
+}
+.founder-banner strong {
+    color: var(--ajito-accent);
+    display: block;
+    margin-bottom: 4px;
+}
+.founder-banner code {
+    background: rgba(0,0,0,0.3);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.tier-card {
+    background: var(--ajito-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+}
+.tier-card.tier-featured {
+    border-color: var(--ajito-accent);
+    box-shadow: 0 0 0 1px var(--ajito-accent);
+}
+.tier-card h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+.tier-card .tier-sub {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+.tier-card .tier-price {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+.tier-card .price-monthly {
+    font-size: 28px;
+    font-weight: 700;
+}
+.tier-card .price-monthly small {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+.tier-card .price-founder {
+    color: var(--ajito-accent);
+    font-size: 15px;
+    font-weight: 600;
+}
+.tier-card .price-founder small {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+.tier-card .tier-annual {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+.tier-card .tier-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    flex: 1 1 auto;
+}
+.tier-card .tier-features li {
+    padding: 6px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    border-bottom: 1px solid var(--border-color);
+}
+.tier-card .tier-features li:last-child {
+    border-bottom: 0;
+}
+.tier-card .tier-cta {
+    text-align: center;
+    background: var(--ajito-accent);
+    color: #0a0e27;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.tier-card .tier-cta:hover {
+    filter: brightness(1.1);
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+
+.faq-section {
+    max-width: 760px;
+    margin: 0 auto;
+}
+.faq-section details {
+    background: var(--ajito-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+}
+.faq-section summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+.faq-section summary::-webkit-details-marker {
+    display: none;
+}
+.faq-section summary::after {
+    content: "+";
+    float: right;
+    color: var(--ajito-accent);
+    font-size: 20px;
+    line-height: 1;
+}
+.faq-section details[open] summary::after {
+    content: "−";
+}
+.faq-section details p {
+    margin-top: 12px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ============================================
+   Final CTA
+   ============================================ */
+
+.final-cta {
+    text-align: center;
+    background: radial-gradient(ellipse at center, rgba(217, 119, 6, 0.10), transparent 60%);
+}
+.final-cta p {
+    color: var(--text-secondary);
+    max-width: 560px;
+    margin: 12px auto 24px auto;
+}
+.final-cta .cta-primary {
+    display: inline-block;
+    background: var(--ajito-accent);
+    color: #0a0e27;
+    padding: 14px 32px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.final-cta .cta-primary:hover {
+    filter: brightness(1.1);
+}
+
+/* ============================================
+   Footer override — softer note color
+   ============================================ */
+
+.ajito-page .footer {
+    background: var(--primary-dark);
+    border-top: 1px solid var(--border-color);
+    padding: 32px 0;
+    text-align: center;
+}
+.ajito-page .footer-legal {
+    margin: 8px 0;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+.ajito-page .footer-note {
+    max-width: 680px;
+    margin: 16px auto 0 auto;
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.6;
+}
